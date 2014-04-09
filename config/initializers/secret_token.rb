@@ -1,0 +1,1 @@
+Nationalsuperheroregistry::Application.config.secret_key_base = '412f9f2173eda80ad176c2639e80244efd19efc5a9c2821ec2f1ac754f12c8912659cfb405c85218ca569a72145d27940cce62ce96799ea9ced9e24fd9315675'

@@ -1,6 +1,12 @@
 class SuperherosController < ApplicationController
   def index
-    @superheros = Superhero.all
+    @cities = City.all
+    @superheros = Superhero.order(city_id: :asc, superpower: :asc)
+    if params[:search]
+      @query = params[:search]
+      @results = Superhero.basic_search(@query)
+      render :search_results
+    end
   end
 
   def new
@@ -8,6 +14,7 @@ class SuperherosController < ApplicationController
   end
 
   def create
+    # @city = City.find(params[:superhero][:city_id])
     @superhero = Superhero.new(superhero_params)
     if @superhero.save
       flash[:notice] = "Superhero added."
@@ -44,7 +51,7 @@ class SuperherosController < ApplicationController
 
 private
   def superhero_params
-    params.require(:superhero).permit(:name, :city, :superpower, :archenemy)
+    params.require(:superhero).permit(:name, :city_id, :superpower, :archenemy)
   end
 end
 

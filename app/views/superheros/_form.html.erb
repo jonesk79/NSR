@@ -6,8 +6,7 @@
     <%= f.text_field :name %>
   </div>
   <div class="form-group">
-    <%= f.label :city %>
-    <%= f.text_field :city %>
+  <%= f.collection_select :city_id, City.all, :id, :name %>
   </div>
   <div class="form-group">
     <%= f.label :superpower %>

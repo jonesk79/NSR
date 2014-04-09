@@ -1,0 +1,9 @@
+<%= render("layouts/errors", :object => @city) %>
+
+<%= form_for(@city) do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <%= f.submit(:class => "btn btn-primary") %>
+<% end %>

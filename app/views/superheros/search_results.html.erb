@@ -1,0 +1,13 @@
+<% provide :title, "Superheroes containing '#{@query}'" %>
+
+<h1><%= yield :title %></h1>
+
+<% if @results.any? %>
+  <ul>
+    <% @results.each do |superhero| %>
+      <li><%= link_to superhero.name, superhero %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No results found.</p>
+<% end %>

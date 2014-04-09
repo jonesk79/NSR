@@ -1,0 +1,15 @@
+<%= content_for(:title, "Cities | National Superhero Registry") %>
+
+<h1>National Superhero Registry</h1>
+<h2>Cities</h2>
+
+<ul>
+  <% @cities.each do |city| %>
+    <li><a href="/cities/<%= city.id %>"><%= city.name %></a></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add A New City", new_city_path, :class=> "btn btn-default" %><br><br>
+
+<%= link_to "Return To Cities Listings", cities_path %><br><br>
+<%= link_to "Return To Superhero Listings", superheros_path %>
