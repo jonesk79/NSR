@@ -1,0 +1,14 @@
+<%= content_for(:title, "View | National Superhero Registry") %>
+
+<h1>View superheros</h1>
+<h2>Name: <%= @superhero.name %></h2>
+<h4>City: <%= @superhero.city %></h4>
+<h4>Superpower: <%= @superhero.superpower %></h4>
+<h4>Archenemy: <%= @superhero.archenemy %></h4>
+
+<p><%= link_to "Edit", edit_superhero_path(@superhero), :class => "btn btn-default" %></p>
+<p><%= link_to "Delete", superhero_path(@superhero),
+                         :confirm => "You sure?",
+                         :method => "delete",
+                         :class => "btn btn-danger" %></p>
+<%= link_to "Return to superhero listings", superheros_path, :class=> "btn btn-default" %>

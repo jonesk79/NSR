@@ -1,0 +1,12 @@
+<%= content_for(:title, "Superheros | National Superhero Registry") %>
+
+<h1>National Superhero Registry</h1>
+<h2>Superheros</h2>
+
+<ul>
+  <% @superheros.each do |superhero| %>
+    <li><a href="/superheros/<%= superhero.id %>"><%= superhero.name %></a></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add a new superhero", new_superhero_path, :class=> "btn btn-default" %>

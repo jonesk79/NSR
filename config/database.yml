@@ -1,0 +1,11 @@
+default: &default
+  adapter: postgresql
+
+development:
+  <<: *default
+  database: nationalsuperheroregistry_development
+
+test:
+  <<: *default
+  database: nationalsuperheroregistry_test
+

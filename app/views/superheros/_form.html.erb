@@ -1,0 +1,21 @@
+<%= render("layouts/errors", :object => @superhero) %>
+
+<%= form_for(@superhero) do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="form-group">
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+  </div>
+  <div class="form-group">
+    <%= f.label :superpower %>
+    <%= f.text_field :superpower %>
+  </div>
+  <div class="form-group">
+    <%= f.label :archenemy %>
+    <%= f.text_field :archenemy %>
+  </div>
+  <%= f.submit(:class => "btn btn-primary") %>
+<% end %>
