@@ -1,28 +1,22 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hey KeMonté - good talking with you today.
 
-Things you may want to cover:
+Here is the assignment we discussed earlier. Please let me know if you have any questions about it, or any other questions about Sideqik.
 
-* Ruby version
+Thanks,
+Jeremy
 
-* System dependencies
+Create a simple Rails application to support the following:
+The government has decided the nation’s superheroes have gotten out of control and they’re cracking down! So they’re creating a National Superhero Registry (NSR), and you’re the developer building it.  
 
-* Configuration
+It should support the following stories:
+Allow adding superheroes to the registry, including the following fields: name, city, superpower, archenemy
+Show a listing of all superheroes grouped by city, sorted by superpower within each city
+Allow searching for superheroes by name
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Please upload your project to github and share it with us:
+You can use whatever data store you like (SQLite, PostgreSQL, Mongo, etc.)
+Use whatever libraries/gems you want
+Feel free to make it as basic or as pretty as you like, but we don’t expect you to spend days working on this. If it’s taking more than a few hours, just send us whatever progress you’ve made!
+Bonus points: write rspec specs, use jQuery, use Twitter Bootstrap
