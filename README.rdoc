@@ -1,12 +1,4 @@
 == README
-
-Hey KeMonté - good talking with you today.
-
-Here is the assignment we discussed earlier. Please let me know if you have any questions about it, or any other questions about Sideqik.
-
-Thanks,
-Jeremy
-
 Create a simple Rails application to support the following:
 The government has decided the nation’s superheroes have gotten out of control and they’re cracking down! So they’re creating a National Superhero Registry (NSR), and you’re the developer building it.  
 
